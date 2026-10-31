@@ -1,0 +1,63 @@
+    1  ls -l
+    2  pwd
+    3  whoami
+    4  sudo fdisk -l
+    5  ssh-keygen -t ed25519
+    6  ls -l a
+    7  la -la
+    8  cd .ssh
+    9  ls -l
+   10  cat id_ed25519.pub
+   11  cd
+   12  pwd
+   13  mkdir repogit
+   14  ls -l
+   15  cd repogit/
+   16  ls -l
+   17  git clone git@github.com:mennellagaston/TP2_Mennella_Gaston.git
+   18  ls -l}
+   19  ls -l
+   20  cd TP2_Mennella_Gaston/
+   21  ls -l
+   22  sudo fdisk -l
+   23  exit
+   24  sudo fdisk -l
+   25  sudo /dev/sdd
+   26  sudo fdisk /dev/sdd
+   27  free
+   28  free -h
+   29  sudo mkswap /dev/sdd1
+   30  free -h
+   31  sudo swapon /dev/sdd1
+   32  free -h
+   33  swapon -s
+   34  cat /proc/swaps
+   35  sudo fdisk /dev/sdc
+   36  sudo wipefs -a /dev/sdc1
+   37  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   38  sudo pvs
+   39  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   40  sudo vgs
+   41  sudo pvs
+   42  sudo vgcreate vg_web /dev/sdc2
+   43  pvs
+   44  sudo pvs
+   45  sudo lvcreate -L 1G vg_web -n lv_web1
+   46  sudo lvcreate -L 512M vg_web -n lv_web2
+   47  sudo lvcreate -L 512M vg_web -n lv_web3
+   48  sudo lvs
+   49  sudo pvs
+   50  sudo fdisk -l
+   51  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   52  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   53  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   54  pwd
+   55  ls -l
+   56  cd repogit/
+   57  ls -l
+   58  TP2_Mennella_Gaston/
+   59  cd TP2_Mennella_Gaston/
+   60  sudo pvs > pvs.txt
+   61  sudo vgs > vgs.txt
+   62  sudo lvs > lvs.txt
+   63  history > historial_lvm.txt
